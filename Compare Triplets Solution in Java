@@ -1,0 +1,48 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+
+public class compare
+{
+    public static void main(String arg[])
+    {
+        int a=0,b=0;
+        Scanner S=new Scanner(System.in);
+        //int n=S.nextInt();
+        int arr[]=new int[3];
+        int brr[]=new int [3];
+        for(int i=0;i<3;i++)
+        {
+            arr[i]=S.nextInt();
+    }
+    for(int j=0;j<3;j++)
+    {
+        brr[j]=S.nextInt();
+    }
+    for(int i=0;i<3;i++)
+    {
+        if(arr[i]>brr[i])
+        {
+            a=a+1;
+            
+            
+        }
+        else if(arr[i]<brr[i])
+        {
+b=b+1;
+        }
+        //if(arr[1]==brr[1])
+        //{
+          //  break;
+       // }
+        
+    }
+    System.out.println(a+" "+b);
+    }
+}

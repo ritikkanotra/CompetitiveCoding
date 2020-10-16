@@ -1,0 +1,29 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class pattern
+{
+    public static void main(String arg[])
+    {
+        Scanner S=new Scanner(System.in);
+        int n=S.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            for(int k=n;k>i;k--)
+            {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("#");
+            }
+            System.out.print("\n");
+        }
+        //System.out.println("\n");
+    }
+}
