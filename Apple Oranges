@@ -1,0 +1,59 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+public class apple
+{
+    public static void main(String arg[])
+    {
+        int c1=0,d1=0;
+        Scanner S=new Scanner(System.in);
+        int s=S.nextInt();
+        int t=S.nextInt();
+        int a=S.nextInt();
+        int b=S.nextInt();
+        int m=S.nextInt();
+        int n=S.nextInt();
+        int arr[]=new int [m];
+        int brr[]=new int[n];
+        int c[]=new int[m];
+        int d[]=new int [n];
+        for(int i=0;i<m;i++)
+        {
+            arr[i]=S.nextInt();
+        }
+        for(int j=0;j<n;j++)
+        {
+brr[j]=S.nextInt();
+        }
+        for(int i=0;i<m;i++)
+        {
+            c[i]=arr[i]+a;
+        }
+        for(int j=0;j<n;j++)
+        {
+            d[j]=brr[j]+b;
+        }
+for(int i=0;i<m;i++)
+{
+    if(c[i]>=s&&c[i]<=t)
+    {
+        c1++;
+    }
+}
+for(int j=0;j<n;j++)
+{
+    if(d[j]>=s&&d[j]<=t)
+    {
+d1++;
+    }
+}
+System.out.println(c1);
+System.out.println(d1);
+    }
+}
+
+        
