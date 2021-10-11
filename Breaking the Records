@@ -1,0 +1,15 @@
+n=int(input())
+l1=list(map(int,input().split()))
+a=l1[0]
+b=l1[0]
+c=0
+d=0
+for i in range(n):
+    if l1[i]>a:
+       a=l1[i]
+       c=c+1
+    elif l1[i]<b:
+        b=l1[i]
+        d=d+1
+print(c,d)
+##print(d)
